@@ -1,39 +1,92 @@
-# house-price-prediction-ml
-House price prediction using data analysis, visualization, and machine learning (King County dataset)
+# House Price Prediction using Machine Learning
 
-🏠 House Price Prediction Project
+This project analyzes housing data from King County, USA and builds regression models to predict house prices based on property features.
 
-In this project, I worked with the King County housing dataset to understand how different house features affect price. The goal was to explore the data, visualize important patterns, and build machine learning models to predict house prices.
+---
 
+## Project Overview
 
-📊 What I did in this project
+The objective of this project is to understand how different house attributes influence sale prices and to develop machine learning models that can accurately predict house prices.
 
-1. Loaded and cleaned the dataset using Pandas
+The workflow includes data cleaning, exploratory data analysis (EDA), feature correlation analysis, model building, and performance evaluation.
 
-2. Handled missing values in important columns like bedrooms and bathrooms
+---
 
-3. Performed exploratory data analysis to understand feature distributions
+## Dataset
 
-4. Checked correlations to see which factors influence house prices the most
+The dataset used in this project is the King County housing dataset, which contains information about house sales in King County, USA.
 
-5. Built regression models (Linear Regression and Ridge Regression)
+It includes features such as:
+- Bedrooms  
+- Bathrooms  
+- Living area (sqft_living)  
+- Waterfront  
+- Grade  
+- Latitude and Longitude  
+- Basement area  
+- Year built  
+- And other structural attributes  
 
-6. Used polynomial features and pipelines to improve prediction accuracy
+---
 
-7. Evaluated models using train-test split
+## Project Workflow
 
+### 1. Data Loading and Cleaning
+- Loaded the dataset using Pandas  
+- Checked data types and summary statistics  
+- Handled missing values in key columns  
 
-📈 Observations
+### 2. Exploratory Data Analysis
+- Visualized feature distributions  
+- Plotted relationships between important variables  
+- Analyzed the distribution of house prices  
 
-1. Houses with larger living area generally have higher prices
+### 3. Feature Correlation Analysis
+- Examined correlations between house features and price  
+- Identified influential variables such as living area and grade  
 
-2. Waterfront homes tend to be more expensive compared to non-waterfront ones
+### 4. Model Building
+- Implemented Linear Regression  
+- Applied Ridge Regression for regularization  
+- Used Polynomial Features to capture non-linear relationships  
+- Built pipelines for structured and clean model training  
 
-3. Features like grade and location showed strong influence on price
+### 5. Model Evaluation
+- Performed train-test split  
+- Evaluated models using R² score  
+- Compared performance across different models  
 
-4. Adding polynomial features improved model performance slightly
+---
 
+## Key Observations
 
-🛠 Tools & Libraries
+- Houses with larger living areas tend to have higher prices.  
+- Waterfront properties are generally more expensive.  
+- Features such as grade and location strongly influence house prices.  
+- Polynomial features slightly improved prediction accuracy.  
+- Ridge Regression helped reduce overfitting.  
 
-Python, Pandas, NumPy, Seaborn, Matplotlib, Scikit-learn
+---
+
+## Models Used
+
+- Linear Regression  
+- Ridge Regression  
+- Polynomial Ridge Regression  
+
+---
+
+## Technologies Used
+
+- Python  
+- Pandas  
+- NumPy  
+- Matplotlib  
+- Seaborn  
+- Scikit-learn  
+
+---
+
+## Conclusion
+
+This project demonstrates a complete regression workflow including data preprocessing, exploratory analysis, model development, regularization, and evaluation. It highlights how feature engineering and regularization techniques improve predictive performance in real-world datasets.
